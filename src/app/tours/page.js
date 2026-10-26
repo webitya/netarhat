@@ -51,10 +51,7 @@ export default function ToursPage() {
       {/* Header */}
       <section className="bg-[#124B2A] text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-            Curated Jharkhand Holidays
-          </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Tour Packages from Ranchi
           </h1>
           <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -141,7 +138,7 @@ export default function ToursPage() {
               {/* Card Body */}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h2 className="font-serif text-xl font-bold text-[#124B2A] group-hover:text-[#3D8B40] transition mb-1 leading-snug">
+                  <h2 className="text-xl font-bold text-[#124B2A] group-hover:text-[#3D8B40] transition mb-1 leading-snug">
                     <Link href={`/tours/${pkg.slug}`}>{pkg.title}</Link>
                   </h2>
                   <p className="text-xs text-[#3D8B40] font-semibold mb-3">{pkg.subtitle}</p>

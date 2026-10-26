@@ -258,7 +258,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
         {/* Top Header */}
         <header className="bg-white border-b border-[#E5E2D7] px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <h1 className="font-serif text-lg font-bold text-[#124B2A] leading-tight">
+            <h1 className="text-lg font-bold text-[#124B2A] leading-tight">
               {activeTab === "overview" && "Customer Bookings & Inquiries"}
               {activeTab === "packages" && "Active Tour Packages Directory"}
               {activeTab === "stays" && "Accommodations & Stays Directory"}
@@ -291,7 +291,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
                   <span className="text-[10px] uppercase font-bold text-[#4e5e54] tracking-wider block">
                     Total Inquiries
                   </span>
-                  <div className="text-2xl font-bold font-serif text-[#124B2A] mt-1">{totalCount}</div>
+                  <div className="text-2xl font-bold text-[#124B2A] mt-1">{totalCount}</div>
                   <span className="text-[10px] text-[#3D8B40] font-medium">All recorded leads</span>
                 </div>
 
@@ -299,7 +299,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
                   <span className="text-[10px] uppercase font-bold text-[#4e5e54] tracking-wider block">
                     Pending Follow-up
                   </span>
-                  <div className="text-2xl font-bold font-serif text-[#F4A62A] mt-1">{pendingCount}</div>
+                  <div className="text-2xl font-bold text-[#F4A62A] mt-1">{pendingCount}</div>
                   <span className="text-[10px] text-[#F4A62A] font-medium">Needs call/response</span>
                 </div>
 
@@ -307,7 +307,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
                   <span className="text-[10px] uppercase font-bold text-[#4e5e54] tracking-wider block">
                     Contacted
                   </span>
-                  <div className="text-2xl font-bold font-serif text-[#3D8B40] mt-1">{contactedCount}</div>
+                  <div className="text-2xl font-bold text-[#3D8B40] mt-1">{contactedCount}</div>
                   <span className="text-[10px] text-[#3D8B40] font-medium">Discussion in progress</span>
                 </div>
 
@@ -315,7 +315,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
                   <span className="text-[10px] uppercase font-bold text-[#4e5e54] tracking-wider block">
                     Confirmed
                   </span>
-                  <div className="text-2xl font-bold font-serif text-[#124B2A] mt-1">{confirmedCount}</div>
+                  <div className="text-2xl font-bold text-[#124B2A] mt-1">{confirmedCount}</div>
                   <span className="text-[10px] text-[#3D8B40] font-medium">Booking finalized</span>
                 </div>
               </div>
@@ -477,7 +477,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
           {activeTab === "packages" && (
             <div className="space-y-4">
               <div className="bg-white p-4 rounded-[3px] border border-[#E5E2D7]">
-                <h2 className="font-serif text-base font-bold text-[#124B2A] mb-1">
+                <h2 className="text-base font-bold text-[#124B2A] mb-1">
                   Active Tour Packages
                 </h2>
                 <p className="text-xs text-[#4e5e54]">
@@ -498,7 +498,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
                       </span>
                     </div>
 
-                    <h3 className="font-serif font-bold text-sm text-[#124B2A]">{pkg.title}</h3>
+                    <h3 className="font-bold text-sm text-[#124B2A]">{pkg.title}</h3>
                     <p className="text-xs text-[#4e5e54] line-clamp-2">{pkg.overview}</p>
 
                     <div className="pt-2 border-t border-[#E5E2D7] flex items-center justify-between">
@@ -524,7 +524,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
           {activeTab === "stays" && (
             <div className="space-y-4">
               <div className="bg-white p-4 rounded-[3px] border border-[#E5E2D7]">
-                <h2 className="font-serif text-base font-bold text-[#124B2A] mb-1">
+                <h2 className="text-base font-bold text-[#124B2A] mb-1">
                   Partner Accommodations & Stays
                 </h2>
                 <p className="text-xs text-[#4e5e54]">
@@ -539,7 +539,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
                     className="bg-white p-4 rounded-[3px] border border-[#E5E2D7] shadow-2xs space-y-2"
                   >
                     <div className="flex items-center justify-between">
-                      <h3 className="font-serif font-bold text-sm text-[#124B2A]">{stay.name}</h3>
+                      <h3 className="font-bold text-sm text-[#124B2A]">{stay.name}</h3>
                       <span className="text-xs font-bold text-[#F4A62A]">{stay.pricePerNight}</span>
                     </div>
                     <p className="text-xs text-[#3D8B40] font-medium">{stay.location} • {stay.type}</p>

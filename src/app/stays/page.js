@@ -50,10 +50,7 @@ export default function StaysPage() {
       {/* Header */}
       <section className="bg-[#124B2A] text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-            Handpicked Accommodations
-          </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Recommended Stays in Netarhat & Betla
           </h1>
           <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -94,7 +91,7 @@ export default function StaysPage() {
                     <MapPin size={13} />
                     <span>{stay.location}</span>
                   </div>
-                  <h2 className="font-serif text-xl font-bold text-[#124B2A] mb-2">{stay.name}</h2>
+                  <h2 className="text-xl font-bold text-[#124B2A] mb-2">{stay.name}</h2>
                   <p className="text-xs sm:text-sm text-[#25332B] leading-relaxed mb-4">
                     {stay.description}
                   </p>

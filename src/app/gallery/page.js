@@ -24,10 +24,7 @@ export default function GalleryPage() {
       {/* Header */}
       <section className="bg-[#124B2A] text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-            Visual Journey
-          </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Photo & Media Gallery
           </h1>
           <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -90,7 +87,7 @@ export default function GalleryPage() {
                   <MapPin size={12} />
                   <span>{item.location}</span>
                 </div>
-                <h2 className="font-serif text-lg font-bold text-white group-hover:text-[#F4A62A] transition">
+                <h2 className="text-lg font-bold text-white group-hover:text-[#F4A62A] transition">
                   {item.title}
                 </h2>
                 <p className="text-xs text-[#E5E2D7] mt-1 line-clamp-2">
@@ -136,7 +133,7 @@ export default function GalleryPage() {
                   {activePhoto.location} • {activePhoto.category}
                 </span>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-white mb-2">
+              <h3 className="text-2xl font-bold text-white mb-2">
                 {activePhoto.title}
               </h3>
               <p className="text-sm text-[#E5E2D7] leading-relaxed">

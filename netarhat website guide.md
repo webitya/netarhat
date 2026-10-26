@@ -262,7 +262,7 @@ This clean structure mirrors best practices for SEO-friendly URLs (short, logica
         "postalCode": "829207",
         "addressCountry": "IN"
       },
-      "telephone": "+919470938399",
+      "telephone": "+916205087480",
       "email": "info@netarhat.in",
       "url": "https://netarhat.in",
       "openingHours": "Mo-Su 09:00-18:00",
@@ -445,7 +445,7 @@ flowchart LR
     "longitude": 84.4197
   },
   "url": "https://netarhat.in",
-  "telephone": "+919470938399",
+  "telephone": "+916205087480",
   "email": "info@netarhat.in",
   "openingHours": "Mo-Su 08:00-20:00",
   "priceRange": "$$",

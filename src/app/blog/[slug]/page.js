@@ -84,7 +84,7 @@ export default async function BlogPostPage({ params }) {
             {post.category}
           </span>
 
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#124B2A] leading-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#124B2A] leading-tight mb-4">
             {post.title}
           </h1>
 
@@ -125,7 +125,7 @@ export default async function BlogPostPage({ params }) {
               return (
                 <h2
                   key={i}
-                  className="font-serif text-xl sm:text-2xl font-bold text-[#124B2A] pt-4 border-b border-[#E5E2D7] pb-2"
+                  className="text-xl sm:text-2xl font-bold text-[#124B2A] pt-4 border-b border-[#E5E2D7] pb-2"
                 >
                   {para.replace("### ", "")}
                 </h2>
@@ -141,7 +141,7 @@ export default async function BlogPostPage({ params }) {
             <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
               Ready to Experience This?
             </span>
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mb-2">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
               Explore Our Netarhat & Betla Tour Packages
             </h3>
             <p className="text-xs sm:text-sm text-[#F8F7F2]/80 max-w-md">

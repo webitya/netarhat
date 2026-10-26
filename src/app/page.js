@@ -63,12 +63,6 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-16">
-          {/* Authentic Local Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#124B2A]/80 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold text-[#F4A62A] mb-5 shadow-sm">
-            <ShieldCheck size={15} className="text-[#3D8B40]" />
-            <span>Govt. Approved Local Operator • Latehar & Netarhat Circuit</span>
-          </div>
-
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5 drop-shadow-md">
             Netarhat Betla Tourism
           </h1>
@@ -147,9 +141,6 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-[#F8F7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
-              Two Unmatched Wonders of Jharkhand
-            </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight mb-3">
               Misty Mountain Heights & Untamed Tiger Reserve
             </h2>
@@ -169,9 +160,6 @@ export default function HomePage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-[#124B2A] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">
-                  Elevation: 1,128m
-                </div>
                 <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-xs text-white p-3 rounded-lg">
                   <h3 className="text-xl font-bold text-[#FFFFFF]">Netarhat — The Queen of Chotanagpur</h3>
                   <p className="text-xs text-[#E5E2D7]">Pine forests, cool morning mist & legendary sunsets</p>
@@ -220,9 +208,6 @@ export default function HomePage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-[#3D8B40] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">
-                  Palamau Tiger Reserve
-                </div>
                 <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-xs text-white p-3 rounded-lg">
                   <h3 className="text-xl font-bold text-[#FFFFFF]">Betla National Park & Forts</h3>
                   <p className="text-xs text-[#E5E2D7]">Wild Asian elephants, safari trails & 16th-century ruins</p>
@@ -269,9 +254,6 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-              <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-                Handcrafted Itineraries from Ranchi
-              </span>
               <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight">
                 Our Featured Tour Packages
               </h2>
@@ -384,9 +366,6 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-[#124B2A] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-              Credibility & Local Expertise
-            </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
               Why Travel With Netarhat Betla Tourism?
             </h2>
@@ -416,9 +395,6 @@ export default function HomePage() {
       <section className="py-16 sm:py-20 bg-[#F8F7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
-              Guest Experiences
-            </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight mb-3">
               What Our Travelers Say
             </h2>
@@ -458,9 +434,6 @@ export default function HomePage() {
       {/* 6. CALL TO ACTION / CUSTOM TRIP BANNER */}
       <section className="py-16 bg-[#F2EFE8] border-t border-[#E5E2D7]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <span className="inline-block px-3 py-1 rounded-full bg-[#124B2A]/10 text-[#124B2A] text-xs font-bold uppercase tracking-wider">
-            Personalized Mountain & Safari Itineraries
-          </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight">
             Planning a Family Holiday or Corporate Retreat to Netarhat?
           </h2>

@@ -48,7 +48,7 @@ export default function AboutPage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block">
               Our Roots & Mission
             </span>
-            <h2 className="font-serif text-3xl font-bold text-[#124B2A]">
+            <h2 className="text-3xl font-bold text-[#124B2A]">
               Born in Latehar, Dedicated to Jharkhand’s Splendor
             </h2>
             <p className="text-sm sm:text-base text-[#25332B] leading-relaxed">
@@ -95,7 +95,7 @@ export default function AboutPage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
               Our Principles
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#124B2A]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A]">
               How We Create Meaningful Journeys
             </h2>
           </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-lg bg-[#124B2A] text-[#F4A62A] flex items-center justify-center mb-4">
                 <TreePine size={24} />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#124B2A] mb-2">Preserving Nature</h3>
+              <h3 className="text-lg font-bold text-[#124B2A] mb-2">Preserving Nature</h3>
               <p className="text-xs text-[#25332B] leading-relaxed">
                 We enforce strict zero-litter policies across Netarhat viewpoints and Betla safari trails. We partner with local forest departments to keep our pristine forests unmarred.
               </p>
@@ -115,7 +115,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-lg bg-[#3D8B40] text-white flex items-center justify-center mb-4">
                 <HeartHandshake size={24} />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#124B2A] mb-2">Empowering Locals</h3>
+              <h3 className="text-lg font-bold text-[#124B2A] mb-2">Empowering Locals</h3>
               <p className="text-xs text-[#25332B] leading-relaxed">
                 Every rupee spent through our packages directly benefits tribal homestays, local dhaba cooks, indigenous artisans, and local forest youth guides from the Asur and Oraon communities.
               </p>
@@ -125,7 +125,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-lg bg-[#F4A62A] text-[#124B2A] flex items-center justify-center mb-4">
                 <ShieldCheck size={24} />
               </div>
-              <h3 className="font-serif text-lg font-bold text-[#124B2A] mb-2">Safety & Comfort</h3>
+              <h3 className="text-lg font-bold text-[#124B2A] mb-2">Safety & Comfort</h3>
               <p className="text-xs text-[#25332B] leading-relaxed">
                 From emergency medical first-aid kits in all safari vehicles to verified hot-water facilities in winter highlands, your safety and well-being is our uncompromised priority.
               </p>
@@ -139,7 +139,7 @@ export default function AboutPage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
               Plan Your Adventure
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-2">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
               Ready to Discover Netarhat & Betla?
             </h3>
             <p className="text-xs sm:text-sm text-[#F8F7F2]/80 max-w-xl">

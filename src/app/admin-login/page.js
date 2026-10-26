@@ -44,20 +44,18 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-md bg-white border border-[#E5E2D7] shadow-lg rounded-[4px] overflow-hidden">
         {/* Header */}
         <div className="bg-[#124B2A] text-white p-6 text-center border-b border-[#0c331c]">
-          <div className="relative w-14 h-14 mx-auto rounded-full overflow-hidden border-2 border-[#F4A62A] bg-white mb-3 shadow">
-            <Image
+          <div className="w-14 h-14 mx-auto rounded-full overflow-hidden border-2 border-[#F4A62A] bg-white mb-3 shadow flex items-center justify-center">
+            <img
               src="/netarhat-logo.jpeg"
-              alt="Netarhat Logo"
-              fill
-              sizes="56px"
-              className="object-cover"
-              priority
+              alt="Netarhat Betla Tourism Logo"
+              className="w-full h-full object-cover"
+              loading="eager"
             />
           </div>
           <span className="text-[10px] uppercase tracking-widest font-bold text-[#F4A62A] block mb-0.5">
             Admin Management Console
           </span>
-          <h1 className="font-serif text-xl sm:text-2xl font-bold text-white">
+          <h1 className="text-xl sm:text-2xl font-bold text-white">
             Netarhat Betla Tourism
           </h1>
           <p className="text-xs text-[#E5E2D7]/80 mt-1">

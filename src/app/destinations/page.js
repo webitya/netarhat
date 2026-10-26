@@ -20,10 +20,7 @@ export default function DestinationsIndexPage() {
       {/* Hero Header */}
       <section className="bg-[#124B2A] text-white py-16 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-            Jharkhand Eco-Tourism Circuit
-          </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Destinations: Netarhat & Betla
           </h1>
           <p className="text-sm sm:text-lg text-[#F8F7F2]/90 font-light leading-relaxed max-w-2xl mx-auto">
@@ -53,19 +50,11 @@ export default function DestinationsIndexPage() {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4 bg-[#124B2A] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow">
-                    {dest.elevation}
-                  </div>
                 </div>
 
                 {/* Details */}
                 <div className="w-full lg:w-1/2 space-y-4">
-                  <div className="flex items-center gap-2 text-xs font-bold text-[#3D8B40] uppercase tracking-wider">
-                    <Compass size={15} />
-                    <span>Destination Guide</span>
-                  </div>
-
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#124B2A]">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A]">
                     {dest.name}
                   </h2>
                   <p className="text-xs sm:text-sm font-semibold text-[#F4A62A] uppercase tracking-wide">

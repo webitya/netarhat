@@ -21,7 +21,7 @@ export default function BlogPage() {
           <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
             Local Knowledge & Guides
           </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Insights & Travel Tips
           </h1>
           <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -65,7 +65,7 @@ export default function BlogPage() {
                     </span>
                   </div>
 
-                  <h2 className="font-serif text-xl font-bold text-[#124B2A] group-hover:text-[#3D8B40] transition mb-3 leading-snug">
+                  <h2 className="text-xl font-bold text-[#124B2A] group-hover:text-[#3D8B40] transition mb-3 leading-snug">
                     <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                   </h2>
 

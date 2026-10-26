@@ -107,20 +107,11 @@ export default async function TourDetailPage({ params }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#124B2A] via-[#124B2A]/60 to-black/30" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <span className="px-3 py-1 rounded-full bg-[#124B2A] text-white text-xs font-bold shadow">
-              {tour.duration}
-            </span>
-            <span className="px-3 py-1 rounded-full bg-[#F4A62A] text-[#124B2A] text-xs font-bold shadow">
-              {tour.badge}
-            </span>
-          </div>
-
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 drop-shadow-md text-white">
             {tour.title}
           </h1>
           <p className="font-sans text-sm sm:text-lg text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
-            {tour.subtitle}
+            {tour.subtitle} • {tour.duration}
           </p>
         </div>
       </section>
@@ -132,9 +123,6 @@ export default async function TourDetailPage({ params }) {
           <div className="lg:col-span-2 space-y-10">
             {/* Overview */}
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5E2D7] shadow-sm">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
-                Tour Summary
-              </span>
               <h2 className="text-2xl font-bold text-[#124B2A] mb-4">
                 About this Itinerary
               </h2>
@@ -159,9 +147,6 @@ export default async function TourDetailPage({ params }) {
 
             {/* Day-by-Day Detailed Itinerary */}
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5E2D7] shadow-sm">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-                Day-by-Day Schedule
-              </span>
               <h2 className="text-2xl font-bold text-[#124B2A] mb-6">
                 Detailed Itinerary
               </h2>
@@ -196,9 +181,6 @@ export default async function TourDetailPage({ params }) {
 
             {/* Pricing Table */}
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-[#E5E2D7] shadow-sm">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
-                Transparent Rates
-              </span>
               <h2 className="text-2xl font-bold text-[#124B2A] mb-4">
                 Pricing by Group Size
               </h2>

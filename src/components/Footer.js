@@ -56,18 +56,6 @@ export default function Footer() {
               Your official eco-tour guide to Jharkhand&apos;s most breathtaking hill sanctuaries and wildlife reserves.
               Specializing in personalized tours to the Queen of Chotanagpur (Netarhat) and Betla National Park.
             </p>
-
-            {/* Trust Badges */}
-            <div className="pt-2 flex flex-wrap gap-2 text-xs">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0c331c] text-[#3D8B40] border border-[#3D8B40]/30 font-medium">
-                <ShieldCheck size={14} className="text-[#F4A62A]" />
-                Govt. Approved Local Operator
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0c331c] text-[#F8F7F2]/90 border border-[#1b653b] font-medium">
-                <CheckCircle2 size={13} className="text-[#3D8B40]" />
-                Eco-Tourism Certified
-              </span>
-            </div>
           </div>
 
           {/* Quick Links */}
