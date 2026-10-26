@@ -4,7 +4,7 @@ import { COOKIE_NAME, validateSessionToken } from "@/lib/auth";
 import { getAllInquiries } from "@/lib/inquiriesStore";
 import AdminDashboardClient from "./AdminDashboardClient";
 
-export const dynamic = "force-dynamic";
+export const instant = false;
 
 export const metadata = {
   title: "Admin Dashboard — Netarhat Betla Tourism",

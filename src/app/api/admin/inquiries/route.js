@@ -3,7 +3,6 @@ import { cookies } from "next/headers";
 import { COOKIE_NAME, validateSessionToken } from "@/lib/auth";
 import { getAllInquiries, addInquiry } from "@/lib/inquiriesStore";
 
-export const dynamic = "force-dynamic";
 
 export async function GET() {
   const cookieStore = await cookies();
