@@ -60,7 +60,7 @@ export default function StaysPage() {
       </section>
 
       {/* Stays Listing */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {stays.map((stay) => (
             <div

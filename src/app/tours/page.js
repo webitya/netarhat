@@ -61,7 +61,7 @@ export default function ToursPage() {
       </section>
 
       {/* Filter Tabs & Listing */}
-      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         {/* Filter Controls */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
           <button

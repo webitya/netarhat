@@ -76,7 +76,7 @@ export default function Navbar() {
     <>
       {/* Top Banner with Local Credentials & Direct Helpline */}
       <header className="bg-[#0c331c] text-[#F8F7F2] text-xs py-1.5 px-4 border-b border-[#124B2A] hidden md:block">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5 text-[#F4A62A]">
               <ShieldCheck size={14} className="text-[#3D8B40]" />
@@ -120,7 +120,7 @@ export default function Navbar() {
             : "bg-[#124B2A] text-white py-3.5 border-b border-[#0c331c]/40"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between">
           {/* Brand Logo & Name */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-11 h-11 rounded-full overflow-hidden border-2 border-[#F4A62A] shadow-md bg-white shrink-0 flex items-center justify-center">

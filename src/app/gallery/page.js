@@ -34,14 +34,14 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         {/* Category Filters */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition cursor-pointer ${
+              className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold transition cursor-pointer ${
                 filter === cat
                   ? "bg-[#124B2A] text-white shadow-sm"
                   : "bg-white text-[#25332B] border border-[#E5E2D7] hover:bg-[#F8F7F2]"
@@ -53,12 +53,12 @@ export default function GalleryPage() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map((item) => (
             <div
               key={item.id}
               onClick={() => setActivePhoto(item)}
-              className="group relative h-72 rounded-2xl overflow-hidden border border-[#E5E2D7] shadow-sm hover:shadow-xl cursor-pointer transition duration-300"
+              className="group relative h-80 sm:h-96 rounded-2xl overflow-hidden border border-[#E5E2D7] shadow-sm hover:shadow-2xl cursor-pointer transition duration-300"
             >
               <Image
                 src={item.image}

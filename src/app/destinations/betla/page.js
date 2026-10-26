@@ -96,7 +96,7 @@ export default function BetlaDestinationPage() {
 
       {/* Facts Bar */}
       <section className="bg-white border-b border-[#E5E2D7] py-6 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {dest.facts.map((f, i) => (
               <div key={i} className="p-2">
@@ -109,7 +109,7 @@ export default function BetlaDestinationPage() {
       </section>
 
       {/* Main Content Area */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+      <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 py-16 space-y-16">
         {/* Overview & Safari Info */}
         <section className="bg-white p-8 rounded-2xl border border-[#E5E2D7] shadow-sm">
           <div className="max-w-3xl">
