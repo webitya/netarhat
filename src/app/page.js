@@ -288,16 +288,13 @@ export default function HomePage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#124B2A] text-white text-xs font-semibold px-2.5 py-1 rounded shadow">
-                    {pkg.duration}
-                  </div>
-                  <div className="absolute top-3 right-3 bg-[#F4A62A] text-[#124B2A] text-xs font-bold px-2.5 py-1 rounded shadow">
-                    {pkg.badge}
-                  </div>
                   <div className="absolute bottom-3 left-3 flex items-center gap-1 bg-black/60 backdrop-blur-xs text-white text-xs px-2 py-0.5 rounded">
                     <Star size={13} className="text-[#F4A62A] fill-[#F4A62A]" />
                     <span className="font-bold">{pkg.rating}</span>
                     <span className="text-[#E5E2D7]">({pkg.reviewsCount})</span>
+                  </div>
+                  <div className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-xs text-white text-xs px-2.5 py-0.5 rounded font-medium">
+                    {pkg.duration}
                   </div>
                 </div>
 

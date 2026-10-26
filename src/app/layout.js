@@ -1,8 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import SiteShell from "@/components/SiteShell";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -117,10 +115,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#F8F7F2] text-[#25332B] font-sans">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppFloat />
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

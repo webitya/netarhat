@@ -57,7 +57,6 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
         {/* Header */}
         <div className="bg-[#124B2A] text-white px-6 py-4 flex items-center justify-between">
           <div>
-            <span className="text-xs uppercase tracking-widest text-[#F4A62A] font-semibold">Instant Tour Booking</span>
             <h3 className="text-xl font-bold text-[#FFFFFF]">Plan Your Nature Retreat</h3>
           </div>
           <button

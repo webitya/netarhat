@@ -28,9 +28,6 @@ export default function AboutPage() {
       {/* Header */}
       <section className="bg-[#124B2A] text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-            Local Heritage & Eco-Stewardship
-          </span>
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             About Netarhat Betla Tourism
           </h1>
@@ -45,9 +42,6 @@ export default function AboutPage() {
         {/* Story Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block">
-              Our Roots & Mission
-            </span>
             <h2 className="text-3xl font-bold text-[#124B2A]">
               Born in Latehar, Dedicated to Jharkhand’s Splendor
             </h2>
@@ -92,9 +86,6 @@ export default function AboutPage() {
         {/* Core Values */}
         <div className="bg-white p-8 sm:p-12 rounded-2xl border border-[#E5E2D7] shadow-sm">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
-              Our Principles
-            </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A]">
               How We Create Meaningful Journeys
             </h2>
@@ -136,9 +127,6 @@ export default function AboutPage() {
         {/* Credentials & Call to Action */}
         <div className="bg-[#124B2A] text-white p-8 sm:p-12 rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
-              Plan Your Adventure
-            </span>
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
               Ready to Discover Netarhat & Betla?
             </h3>

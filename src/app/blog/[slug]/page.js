@@ -80,15 +80,15 @@ export default async function BlogPostPage({ params }) {
             <span>Back to All Articles</span>
           </Link>
 
-          <span className="inline-block px-3 py-1 rounded-full bg-[#3D8B40]/10 text-[#3D8B40] font-bold text-xs uppercase tracking-wider mb-3">
-            {post.category}
-          </span>
-
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#124B2A] leading-tight mb-4">
             {post.title}
           </h1>
 
           <div className="flex flex-wrap items-center gap-4 text-xs text-[#4e5e54] pb-6 border-b border-[#E5E2D7]">
+            <span className="font-semibold text-[#124B2A]">
+              {post.category}
+            </span>
+            <span>•</span>
             <span className="flex items-center gap-1 font-medium text-[#124B2A]">
               <User size={14} className="text-[#3D8B40]" />
               {post.author}
@@ -138,9 +138,6 @@ export default async function BlogPostPage({ params }) {
         {/* Bottom Tour Booking CTA Box */}
         <div className="mt-12 p-8 bg-[#124B2A] text-white rounded-2xl shadow-lg border border-[#0c331c] flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
-              Ready to Experience This?
-            </span>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
               Explore Our Netarhat & Betla Tour Packages
             </h3>

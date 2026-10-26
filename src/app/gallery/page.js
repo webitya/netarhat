@@ -71,11 +71,6 @@ export default function GalleryPage() {
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
 
-              {/* Badge */}
-              <div className="absolute top-3 left-3 bg-[#124B2A]/90 text-white text-[11px] font-bold px-2.5 py-1 rounded shadow backdrop-blur-xs">
-                {item.category}
-              </div>
-
               {/* View Icon */}
               <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Eye size={16} />

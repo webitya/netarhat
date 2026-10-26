@@ -18,9 +18,6 @@ export default function BlogPage() {
       {/* Header */}
       <section className="bg-[#124B2A] text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-            Local Knowledge & Guides
-          </span>
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Insights & Travel Tips
           </h1>
@@ -46,14 +43,13 @@ export default function BlogPage() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 bg-[#124B2A] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow">
-                  {post.category}
-                </div>
               </div>
 
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center gap-4 text-[11px] text-[#4e5e54] mb-2.5">
+                  <div className="flex items-center gap-3 text-[11px] text-[#4e5e54] mb-2.5">
+                    <span className="font-semibold text-[#124B2A]">{post.category}</span>
+                    <span>•</span>
                     <span className="flex items-center gap-1">
                       <Calendar size={12} className="text-[#3D8B40]" />
                       {post.date}

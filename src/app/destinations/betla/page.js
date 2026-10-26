@@ -85,10 +85,6 @@ export default function BetlaDestinationPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#124B2A] via-[#124B2A]/60 to-black/30" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#3D8B40] text-white font-bold text-xs uppercase tracking-wider mb-4">
-            <Binoculars size={13} />
-            <span>Palamau Tiger Reserve • Wildlife & Heritage</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-md text-white">
             Betla, Jharkhand
           </h1>
@@ -117,9 +113,6 @@ export default function BetlaDestinationPage() {
         {/* Overview & Safari Info */}
         <section className="bg-white p-8 rounded-2xl border border-[#E5E2D7] shadow-sm">
           <div className="max-w-3xl">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
-              Jungle Sanctuary
-            </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A] mb-4">
               Wild Asian Elephants & Ancient Fortresses
             </h2>
@@ -155,9 +148,6 @@ export default function BetlaDestinationPage() {
         {/* Top Highlights & Attractions */}
         <section>
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-              Wild Adventures & History
-            </span>
             <h2 className="text-3xl font-bold text-[#124B2A]">
               Top Attractions in Betla
             </h2>
@@ -195,9 +185,6 @@ export default function BetlaDestinationPage() {
         {/* How to Reach Betla */}
         <section className="bg-white p-8 rounded-2xl border border-[#E5E2D7] shadow-sm">
           <div className="mb-8">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
-              Route Information
-            </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A]">
               How to Reach Betla National Park
             </h2>
@@ -222,9 +209,6 @@ export default function BetlaDestinationPage() {
         <section>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8">
             <div>
-              <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
-                Safari Packages
-              </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A]">
                 Tours to Betla National Park
               </h2>
@@ -245,10 +229,10 @@ export default function BetlaDestinationPage() {
                 className="bg-white rounded-xl overflow-hidden border border-[#E5E2D7] shadow-sm hover:shadow-md transition flex flex-col justify-between p-6"
               >
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-[#3D8B40] bg-[#3D8B40]/10 px-2 py-0.5 rounded">
+                  <span className="text-xs font-semibold text-[#3D8B40]">
                     {pkg.duration}
                   </span>
-                  <h3 className="text-xl font-bold text-[#124B2A] mt-2 mb-1">
+                  <h3 className="text-xl font-bold text-[#124B2A] mt-1 mb-1">
                     <Link href={`/tours/${pkg.slug}`}>{pkg.title}</Link>
                   </h3>
                   <p className="text-xs text-[#4e5e54] mb-4">{pkg.overview}</p>

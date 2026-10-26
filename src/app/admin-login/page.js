@@ -52,9 +52,6 @@ export default function AdminLoginPage() {
               loading="eager"
             />
           </div>
-          <span className="text-[10px] uppercase tracking-widest font-bold text-[#F4A62A] block mb-0.5">
-            Admin Management Console
-          </span>
           <h1 className="text-xl sm:text-2xl font-bold text-white">
             Netarhat Betla Tourism
           </h1>
@@ -82,7 +79,7 @@ export default function AdminLoginPage() {
                 <input
                   type="text"
                   required
-                  placeholder="Username (from .env.local)"
+                  placeholder="Enter username"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className="w-full pl-9 pr-3 py-2 border border-[#E5E2D7] rounded-[3px] text-xs sm:text-sm text-[#25332B] focus:outline-none focus:ring-1 focus:ring-[#124B2A]"
@@ -99,7 +96,7 @@ export default function AdminLoginPage() {
                 <input
                   type="password"
                   required
-                  placeholder="Password (from .env.local)"
+                  placeholder="Enter password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full pl-9 pr-3 py-2 border border-[#E5E2D7] rounded-[3px] text-xs sm:text-sm text-[#25332B] focus:outline-none focus:ring-1 focus:ring-[#124B2A]"
@@ -117,18 +114,7 @@ export default function AdminLoginPage() {
             </button>
           </form>
 
-          {/* Credentials info badge */}
-          <div className="mt-6 p-3 bg-[#F8F7F2] border border-[#E5E2D7] rounded-[3px] text-xs text-[#4e5e54] space-y-1">
-            <span className="font-bold text-[#124B2A] block text-[11px] uppercase">
-              Configured .env.local Credentials:
-            </span>
-            <div className="flex justify-between text-[11px]">
-              <span>Username: <strong className="font-mono text-[#124B2A]">admin</strong></span>
-              <span>Password: <strong className="font-mono text-[#124B2A]">netarhat2026!</strong></span>
-            </div>
-          </div>
-
-          <div className="text-center mt-4">
+          <div className="text-center mt-6">
             <Link
               href="/"
               className="text-xs text-[#3D8B40] hover:text-[#124B2A] font-semibold underline"

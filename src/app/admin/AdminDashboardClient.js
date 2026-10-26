@@ -262,7 +262,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
               {activeTab === "overview" && "Customer Bookings & Inquiries"}
               {activeTab === "packages" && "Active Tour Packages Directory"}
               {activeTab === "stays" && "Accommodations & Stays Directory"}
-              {activeTab === "settings" && "System Configuration (.env.local)"}
+              {activeTab === "settings" && "System & Security Status"}
             </h1>
             <p className="text-[11px] text-[#4e5e54]">
               Connected to Netarhat Betla Tourism Database • Live Status:{" "}
@@ -550,26 +550,41 @@ export default function AdminDashboardClient({ initialInquiries }) {
             </div>
           )}
 
-          {/* Tab 4: Settings & Environment */}
+          {/* Tab 4: Settings & System Status */}
           {activeTab === "settings" && (
             <div className="bg-white p-6 rounded-[3px] border border-[#E5E2D7] shadow-2xs space-y-4 max-w-2xl">
               <h2 className="text-lg font-bold text-[#124B2A]">
-                Environment Configuration (.env.local)
+                System & Security Status
               </h2>
               <p className="text-xs text-[#4e5e54]">
-                The admin authentication is configured securely in <code className="bg-[#E5E2D7] px-1.5 py-0.5 rounded text-[#124B2A]">.env.local</code>.
+                Administrative parameters and session tokens are securely managed through server-side environment configurations.
               </p>
 
-              <div className="space-y-2 text-xs font-mono bg-[#F8F7F2] p-4 rounded-[3px] border border-[#E5E2D7]">
-                <div>ADMIN_USERNAME = &quot;admin&quot;</div>
-                <div>ADMIN_PASSWORD = &quot;netarhat2026!&quot;</div>
-                <div>NEXT_PUBLIC_PHONE = &quot;+916205087480&quot;</div>
-                <div>NEXT_PUBLIC_WHATSAPP = &quot;+916205087480&quot;</div>
-                <div>NEXT_PUBLIC_SITE_URL = &quot;https://netarhat.in&quot;</div>
+              <div className="space-y-3 text-xs bg-[#F8F7F2] p-4 rounded-[3px] border border-[#E5E2D7]">
+                <div className="flex items-center justify-between pb-2 border-b border-[#E5E2D7]">
+                  <span className="font-medium text-[#4e5e54]">Admin Session Protection:</span>
+                  <span className="font-semibold text-[#3D8B40] flex items-center gap-1">
+                    <CheckCircle size={14} /> Active (Encrypted HTTP-only Cookie)
+                  </span>
+                </div>
+                <div className="flex items-center justify-between pb-2 border-b border-[#E5E2D7]">
+                  <span className="font-medium text-[#4e5e54]">Credentials Storage:</span>
+                  <span className="font-semibold text-[#124B2A]">
+                    Protected Server Environment
+                  </span>
+                </div>
+                <div className="flex items-center justify-between pb-2 border-b border-[#E5E2D7]">
+                  <span className="font-medium text-[#4e5e54]">Inquiry Dispatch API:</span>
+                  <span className="font-semibold text-[#3D8B40]">Operational</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="font-medium text-[#4e5e54]">Official Helpline:</span>
+                  <span className="font-mono font-semibold text-[#124B2A]">+91 62050 87480</span>
+                </div>
               </div>
 
               <p className="text-[11px] text-[#75867c]">
-                To update credentials or contact phone numbers, edit the <code className="text-[#124B2A]">.env.local</code> file in the project root.
+                All administrative access is strictly authenticated. No credentials, tokens, or configuration keys are exposed to the browser.
               </p>
             </div>
           )}

@@ -60,9 +60,6 @@ export default function ContactPage() {
       {/* Header */}
       <section className="bg-[#124B2A] text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
-            We are Here to Help
-          </span>
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Contact Netarhat Betla Tourism
           </h1>
@@ -202,9 +199,6 @@ export default function ContactPage() {
             {/* Direct Contact Card */}
             <div className="bg-[#124B2A] text-white p-8 rounded-2xl shadow-md space-y-6">
               <div>
-                <span className="text-xs uppercase font-bold text-[#F4A62A] block mb-1">
-                  Official Travel Desk
-                </span>
                 <h3 className="text-2xl font-bold text-white">
                   Netarhat Betla Tourism
                 </h3>

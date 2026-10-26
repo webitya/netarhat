@@ -75,9 +75,6 @@ export default function StaysPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 bg-[#124B2A] text-white text-xs font-semibold px-2.5 py-1 rounded shadow">
-                  {stay.type}
-                </div>
                 <div className="absolute bottom-3 left-3 flex items-center gap-1 bg-black/60 backdrop-blur-xs text-white text-xs px-2.5 py-1 rounded">
                   <Star size={13} className="text-[#F4A62A] fill-[#F4A62A]" />
                   <span className="font-bold">{stay.rating}</span>
@@ -87,9 +84,12 @@ export default function StaysPage() {
 
               <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <div>
-                  <div className="flex items-center gap-1 text-xs text-[#3D8B40] font-semibold mb-1">
-                    <MapPin size={13} />
-                    <span>{stay.location}</span>
+                  <div className="flex items-center justify-between text-xs text-[#3D8B40] font-semibold mb-1">
+                    <span className="flex items-center gap-1">
+                      <MapPin size={13} />
+                      <span>{stay.location}</span>
+                    </span>
+                    <span className="text-[#4e5e54] font-medium">{stay.type}</span>
                   </div>
                   <h2 className="text-xl font-bold text-[#124B2A] mb-2">{stay.name}</h2>
                   <p className="text-xs sm:text-sm text-[#25332B] leading-relaxed mb-4">

@@ -62,11 +62,8 @@ export default function TourDetailClient({ tour }) {
     <div className="sticky top-24 space-y-6">
       {/* Pricing Card & Booking Box */}
       <div className="bg-white rounded-2xl border-2 border-[#124B2A] shadow-xl overflow-hidden">
-        {/* Header Badge */}
+        {/* Header */}
         <div className="bg-[#124B2A] text-white p-5 text-center">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-[#F4A62A] block mb-1">
-            Official Package Pricing
-          </span>
           <div className="text-3xl font-extrabold text-white">
             ₹{tour.startingPrice.toLocaleString("en-IN")}
             <span className="text-xs font-normal text-[#E5E2D7]"> / person</span>
