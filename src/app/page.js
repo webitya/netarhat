@@ -48,7 +48,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[85vh] lg:min-h-[88vh] flex items-center justify-center text-white overflow-hidden">
+      <section className="relative min-h-[85vh] lg:h-[calc(100vh-70px)] lg:min-h-0 flex flex-col items-center justify-center text-white overflow-hidden">
         {/* Background Photo with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -62,44 +62,44 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#124B2A] via-[#124B2A]/65 to-black/45" />
         </div>
 
-        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 text-center pt-24 pb-16 flex flex-col items-center justify-center">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight text-white mb-5 drop-shadow-lg">
+        <div className="relative z-10 w-full max-w-[1500px] mx-auto px-4 sm:px-8 lg:px-12 text-center py-8 lg:py-3 xl:py-5 flex flex-col items-center justify-center my-auto">
+          <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white mb-2.5 sm:mb-3 drop-shadow-lg">
             Netarhat Betla Tourism
           </h1>
 
-          <p className="text-lg sm:text-2xl text-[#F8F7F2]/95 max-w-4xl mx-auto font-light leading-relaxed mb-10 drop-shadow">
+          <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-[#F8F7F2]/95 max-w-3xl mx-auto font-light leading-relaxed mb-5 sm:mb-6 drop-shadow">
             Discover the misty pine highlands of the <span className="font-semibold text-white">Queen of Chotanagpur</span> and the untamed safaris of <span className="font-semibold text-white">Betla National Park</span>.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-5 sm:mb-6">
             <button
               onClick={() => openBookingFor("Ranchi – Netarhat – Ranchi (2N/3D)")}
-              className="w-full sm:w-auto px-9 py-4 rounded-xl bg-[#F4A62A] hover:bg-[#e09419] text-[#124B2A] font-extrabold text-base shadow-2xl transition transform hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2.5"
+              className="w-full sm:w-auto px-7 py-3 rounded-xl bg-[#F4A62A] hover:bg-[#e09419] text-[#124B2A] font-extrabold text-sm sm:text-base shadow-xl transition transform hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
             >
-              <Calendar size={19} />
+              <Calendar size={18} />
               <span>Book Tour Package</span>
             </button>
 
             <Link
               href="/destinations"
-              className="w-full sm:w-auto px-9 py-4 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold text-base transition flex items-center justify-center gap-2.5"
+              className="w-full sm:w-auto px-7 py-3 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-bold text-sm sm:text-base transition flex items-center justify-center gap-2"
             >
-              <MapPin size={19} className="text-[#F4A62A]" />
+              <MapPin size={18} className="text-[#F4A62A]" />
               <span>Explore Destinations</span>
             </Link>
           </div>
 
           {/* Quick Filter Bar */}
-          <div className="bg-white text-[#25332B] p-5 sm:p-6 rounded-2xl shadow-2xl border border-[#E5E2D7] w-full max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+          <div className="bg-white text-[#25332B] p-3.5 sm:p-5 rounded-2xl shadow-2xl border border-[#E5E2D7] w-full max-w-4xl mx-auto mb-4 sm:mb-5">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 items-center">
               <div className="text-left">
-                <label className="block text-xs uppercase font-bold text-[#124B2A] tracking-wider mb-1.5">
+                <label className="block text-xs uppercase font-bold text-[#124B2A] tracking-wider mb-1">
                   Destination
                 </label>
                 <select
                   value={searchDestination}
                   onChange={(e) => setSearchDestination(e.target.value)}
-                  className="w-full p-3 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A] font-medium"
+                  className="w-full p-2.5 sm:p-2.5 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-xs sm:text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A] font-medium"
                 >
                   <option value="all">All Destinations (Netarhat & Betla)</option>
                   <option value="netarhat">Netarhat (Queen of Chotanagpur)</option>
@@ -108,13 +108,13 @@ export default function HomePage() {
               </div>
 
               <div className="text-left">
-                <label className="block text-xs uppercase font-bold text-[#124B2A] tracking-wider mb-1.5">
+                <label className="block text-xs uppercase font-bold text-[#124B2A] tracking-wider mb-1">
                   Duration
                 </label>
                 <select
                   value={searchDuration}
                   onChange={(e) => setSearchDuration(e.target.value)}
-                  className="w-full p-3 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A] font-medium"
+                  className="w-full p-2.5 sm:p-2.5 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-xs sm:text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A] font-medium"
                 >
                   <option value="all">Any Duration</option>
                   <option value="2n3d">2 Nights / 3 Days</option>
@@ -123,10 +123,10 @@ export default function HomePage() {
                 </select>
               </div>
 
-              <div className="pt-2 sm:pt-6">
+              <div className="pt-1 sm:pt-5">
                 <a
                   href="#packages"
-                  className="w-full py-3 px-5 rounded-lg bg-[#124B2A] hover:bg-[#0c331c] text-white font-bold text-sm transition flex items-center justify-center gap-2 shadow"
+                  className="w-full py-2.5 sm:py-2.5 px-5 rounded-lg bg-[#124B2A] hover:bg-[#0c331c] text-white font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow"
                 >
                   <span>View Matching Tours</span>
                   <ArrowRight size={16} className="text-[#F4A62A]" />
@@ -136,41 +136,41 @@ export default function HomePage() {
           </div>
 
           {/* Bottom Hero Trust Highlights */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-10 pt-8 border-t border-white/20 w-full max-w-5xl text-left">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#F4A62A] shrink-0">
-                <TreePine size={20} />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5 pt-3 sm:pt-4 border-t border-white/20 w-full max-w-4xl text-left">
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#F4A62A] shrink-0">
+                <TreePine size={17} />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">1,128m Altitude</p>
-                <p className="text-xs text-[#E5E2D7]/80">Queen of Chotanagpur</p>
+                <p className="text-white font-bold text-xs sm:text-sm leading-tight">1,128m Altitude</p>
+                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">Queen of Chotanagpur</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#F4A62A] shrink-0">
-                <ShieldCheck size={20} />
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#F4A62A] shrink-0">
+                <ShieldCheck size={17} />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">Palamau Tiger Reserve</p>
-                <p className="text-xs text-[#E5E2D7]/80">Wild Elephant Safaris</p>
+                <p className="text-white font-bold text-xs sm:text-sm leading-tight">Palamau Tiger Reserve</p>
+                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">Wild Elephant Safaris</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#F4A62A] shrink-0">
-                <MapPin size={20} />
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#F4A62A] shrink-0">
+                <MapPin size={17} />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">Latehar Desk</p>
-                <p className="text-xs text-[#E5E2D7]/80">Direct Local Operators</p>
+                <p className="text-white font-bold text-xs sm:text-sm leading-tight">Latehar Desk</p>
+                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">Direct Local Operators</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#25D366] shrink-0">
-                <Phone size={20} />
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-white/10 backdrop-blur-md flex items-center justify-center text-[#25D366] shrink-0">
+                <Phone size={17} />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">6205087480</p>
-                <p className="text-xs text-[#E5E2D7]/80">24/7 Booking Helpline</p>
+                <p className="text-white font-bold text-xs sm:text-sm leading-tight">6205087480</p>
+                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">24/7 Booking Helpline</p>
               </div>
             </div>
           </div>
