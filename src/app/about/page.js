@@ -11,7 +11,6 @@ import {
   Mail,
   MapPin,
   HeartHandshake,
-  Sparkles,
 } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 
@@ -32,7 +31,7 @@ export default function AboutPage() {
           <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
             Local Heritage & Eco-Stewardship
           </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-bold mb-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             About Netarhat Betla Tourism
           </h1>
           <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">

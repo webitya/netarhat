@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import {
   MapPin,
   Phone,
@@ -36,17 +35,15 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#F4A62A] bg-white shrink-0">
-                <Image
+              <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#F4A62A] bg-white shrink-0 flex items-center justify-center">
+                <img
                   src="/netarhat-logo.jpeg"
                   alt="Netarhat Betla Tourism Logo"
-                  fill
-                  sizes="48px"
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <span className="font-serif text-2xl font-bold tracking-tight text-white block">
+                <span className="text-2xl font-bold tracking-tight text-white block">
                   Netarhat Betla
                 </span>
                 <span className="text-xs uppercase tracking-widest font-semibold text-[#F4A62A] block">
@@ -75,10 +72,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-3">
-            <h3 className="font-serif text-lg font-bold text-white tracking-wide border-b border-[#F4A62A]/40 pb-1.5 inline-block">
+            <h3 className="text-base font-bold text-white tracking-wide border-b border-[#F4A62A]/40 pb-1.5 inline-block">
               Explore
             </h3>
-            <ul className="space-y-2 text-sm text-[#F8F7F2]/80">
+            <ul className="space-y-2 text-sm text-[#F8F7F2]/80 font-medium">
               <li>
                 <Link href="/" className="hover:text-[#F4A62A] transition flex items-center gap-1.5">
                   <ArrowRight size={12} className="text-[#3D8B40]" /> Home
@@ -114,10 +111,10 @@ export default function Footer() {
 
           {/* More Links */}
           <div className="space-y-3">
-            <h3 className="font-serif text-lg font-bold text-white tracking-wide border-b border-[#F4A62A]/40 pb-1.5 inline-block">
+            <h3 className="text-base font-bold text-white tracking-wide border-b border-[#F4A62A]/40 pb-1.5 inline-block">
               Resources
             </h3>
-            <ul className="space-y-2 text-sm text-[#F8F7F2]/80">
+            <ul className="space-y-2 text-sm text-[#F8F7F2]/80 font-medium">
               <li>
                 <Link href="/gallery" className="hover:text-[#F4A62A] transition flex items-center gap-1.5">
                   <ArrowRight size={12} className="text-[#3D8B40]" /> Photo Gallery
@@ -148,7 +145,7 @@ export default function Footer() {
 
           {/* Contact Details & Newsletter */}
           <div className="space-y-3">
-            <h3 className="font-serif text-lg font-bold text-white tracking-wide border-b border-[#F4A62A]/40 pb-1.5 inline-block">
+            <h3 className="text-base font-bold text-white tracking-wide border-b border-[#F4A62A]/40 pb-1.5 inline-block">
               Get in Touch
             </h3>
             <div className="space-y-2.5 text-xs text-[#F8F7F2]/80">
@@ -158,8 +155,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={15} className="text-[#F4A62A] shrink-0" />
-                <a href="tel:+919470938399" className="hover:text-[#F4A62A] font-semibold text-white">
-                  +91 94709 38399
+                <a href="tel:6205087480" className="hover:text-[#F4A62A] font-semibold text-white tracking-wider">
+                  +91 62050 87480
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -206,7 +203,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#F8F7F2]/70 gap-3">
-          <p>© 2026 {siteConfig.name} (netarhat.in). All rights reserved.</p>
+          <p>© 2026 {siteConfig.name} (netarhat.in) • Helpline: 6205087480. All rights reserved.</p>
           <div className="flex items-center gap-4 text-xs">
             <span>Official Eco-Tourism Portal</span>
             <span>•</span>

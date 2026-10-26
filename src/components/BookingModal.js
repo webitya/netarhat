@@ -58,7 +58,7 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
         <div className="bg-[#124B2A] text-white px-6 py-4 flex items-center justify-between">
           <div>
             <span className="text-xs uppercase tracking-widest text-[#F4A62A] font-semibold">Instant Tour Booking</span>
-            <h3 className="text-xl font-bold font-serif text-[#FFFFFF]">Plan Your Nature Retreat</h3>
+            <h3 className="text-xl font-bold text-[#FFFFFF]">Plan Your Nature Retreat</h3>
           </div>
           <button
             onClick={onClose}
@@ -76,7 +76,7 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
               <div className="w-16 h-16 bg-[#3D8B40]/10 text-[#3D8B40] rounded-full flex items-center justify-center mx-auto">
                 <CheckCircle size={36} />
               </div>
-              <h4 className="text-2xl font-serif font-bold text-[#124B2A]">Booking Request Received!</h4>
+              <h4 className="text-2xl font-bold text-[#124B2A]">Booking Request Received!</h4>
               <p className="text-[#25332B] text-sm">
                 Thank you, <strong>{formData.name}</strong>. Your inquiry reference is{" "}
                 <span className="font-mono bg-[#E5E2D7] px-2 py-0.5 rounded text-[#124B2A] font-bold">
@@ -86,10 +86,10 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
               </p>
               <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
                 <a
-                  href={`https://wa.me/919470938399?text=${whatsappMessage}`}
+                  href={`https://wa.me/916205087480?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-[#3D8B40] text-white font-medium hover:bg-[#327335] transition text-sm"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-[#25D366] text-white font-medium hover:bg-[#20ba5a] transition text-sm"
                 >
                   Confirm on WhatsApp Now
                 </a>
@@ -154,7 +154,7 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
                     <input
                       type="tel"
                       required
-                      placeholder="e.g. +91 94709 38399"
+                      placeholder="e.g. +91 62050 87480"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full pl-9 pr-3 py-2 border border-[#E5E2D7] rounded-lg text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A]"
@@ -238,12 +238,12 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
                 <p className="text-xs text-[#4e5e54]">
                   Prefer quick booking? Chat with our Latehar office directly:{" "}
                   <a
-                    href={`https://wa.me/919470938399?text=${whatsappMessage}`}
+                    href={`https://wa.me/916205087480?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#3D8B40] font-semibold underline hover:text-[#124B2A]"
+                    className="text-[#25D366] font-semibold underline hover:text-[#124B2A]"
                   >
-                    WhatsApp +91 94709 38399
+                    WhatsApp +91 62050 87480
                   </a>
                 </p>
               </div>

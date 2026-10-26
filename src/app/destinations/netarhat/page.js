@@ -13,7 +13,6 @@ import {
   Star,
   CheckCircle,
   Clock,
-  Sparkles,
 } from "lucide-react";
 
 export const metadata = {
@@ -86,10 +85,10 @@ export default function NetarhatDestinationPage() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F4A62A] text-[#124B2A] font-bold text-xs uppercase tracking-wider mb-4">
-            <Sparkles size={13} />
+            <Compass size={13} />
             <span>Elevation: 1,128m • Queen of Chotanagpur</span>
           </div>
-          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-md text-white">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-md text-white">
             Netarhat, Jharkhand
           </h1>
           <p className="font-sans text-base sm:text-xl text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -105,7 +104,7 @@ export default function NetarhatDestinationPage() {
             {dest.facts.map((f, i) => (
               <div key={i} className="p-2">
                 <span className="text-xs uppercase text-[#4e5e54] font-semibold block">{f.label}</span>
-                <span className="font-serif font-bold text-[#124B2A] text-sm sm:text-base">{f.value}</span>
+                <span className="font-bold text-[#124B2A] text-sm sm:text-base">{f.value}</span>
               </div>
             ))}
           </div>
@@ -120,7 +119,7 @@ export default function NetarhatDestinationPage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
               Destination Profile
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#124B2A] mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A] mb-4">
               The Misty Haven of Jharkhand
             </h2>
             <p className="text-sm sm:text-base text-[#25332B] leading-relaxed mb-4">
@@ -142,7 +141,7 @@ export default function NetarhatDestinationPage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
               Must-Visit Sights
             </span>
-            <h2 className="font-serif text-3xl font-bold text-[#124B2A]">
+            <h2 className="text-3xl font-bold text-[#124B2A]">
               Top Attractions in Netarhat
             </h2>
             <p className="text-xs sm:text-sm text-[#4e5e54] mt-2">
@@ -167,7 +166,7 @@ export default function NetarhatDestinationPage() {
                 </div>
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="font-serif text-lg font-bold text-[#124B2A] mb-2">{att.name}</h3>
+                    <h3 className="text-lg font-bold text-[#124B2A] mb-2">{att.name}</h3>
                     <p className="text-xs text-[#25332B] leading-relaxed">{att.description}</p>
                   </div>
                 </div>
@@ -182,7 +181,7 @@ export default function NetarhatDestinationPage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
               Travel Logistics
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#124B2A]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A]">
               How to Reach Netarhat
             </h2>
           </div>
@@ -195,7 +194,7 @@ export default function NetarhatDestinationPage() {
                   {item.mode.includes("Train") && <Train size={20} />}
                   {item.mode.includes("Road") && <Car size={20} />}
                 </div>
-                <h3 className="font-serif font-bold text-[#124B2A] text-base mb-2">{item.mode}</h3>
+                <h3 className="font-bold text-[#124B2A] text-base mb-2">{item.mode}</h3>
                 <p className="text-xs text-[#25332B] leading-relaxed">{item.details}</p>
               </div>
             ))}
@@ -209,7 +208,7 @@ export default function NetarhatDestinationPage() {
               <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-1">
                 Curated Packages
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#124B2A]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#124B2A]">
                 Tours to Netarhat
               </h2>
             </div>
@@ -232,7 +231,7 @@ export default function NetarhatDestinationPage() {
                   <span className="text-[10px] uppercase font-bold text-[#3D8B40] bg-[#3D8B40]/10 px-2 py-0.5 rounded">
                     {pkg.duration}
                   </span>
-                  <h3 className="font-serif text-lg font-bold text-[#124B2A] mt-2 mb-1">
+                  <h3 className="text-lg font-bold text-[#124B2A] mt-2 mb-1">
                     <Link href={`/tours/${pkg.slug}`}>{pkg.title}</Link>
                   </h3>
                   <p className="text-xs text-[#4e5e54] mb-3 line-clamp-2">{pkg.overview}</p>

@@ -1,21 +1,14 @@
-import { Playfair_Display, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
@@ -80,7 +73,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Official TravelAgency JSON-LD structured data from website guide
+  // Official TravelAgency JSON-LD structured data with updated phone number
   const travelAgencySchema = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
@@ -99,7 +92,7 @@ export default function RootLayout({ children }) {
       "latitude": 23.7367,
       "longitude": 84.4197,
     },
-    "telephone": "+919470938399",
+    "telephone": "+916205087480",
     "email": "info@netarhat.in",
     "url": "https://netarhat.in",
     "openingHours": "Mo-Su 08:00-20:00",
@@ -115,7 +108,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable} h-full antialiased`}
+      className={`${inter.variable} h-full antialiased`}
     >
       <head>
         <script

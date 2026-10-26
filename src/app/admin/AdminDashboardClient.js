@@ -151,17 +151,16 @@ export default function AdminDashboardClient({ initialInquiries }) {
         <div>
           {/* Brand Header */}
           <div className="p-4 flex items-center gap-2.5 border-b border-[#0c331c]">
-            <div className="relative w-9 h-9 rounded-[3px] overflow-hidden border border-[#F4A62A] bg-white shrink-0">
-              <Image
+            <div className="w-9 h-9 rounded-[3px] overflow-hidden border border-[#F4A62A] bg-white shrink-0 flex items-center justify-center">
+              <img
                 src="/netarhat-logo.jpeg"
-                alt="Logo"
-                fill
-                sizes="36px"
-                className="object-cover"
+                alt="Netarhat Betla Tourism Logo"
+                className="w-full h-full object-cover"
+                loading="eager"
               />
             </div>
             <div>
-              <span className="font-serif font-bold text-sm text-white block leading-tight">
+              <span className="font-bold text-sm text-white block leading-tight">
                 Netarhat Betla
               </span>
               <span className="text-[10px] uppercase font-mono tracking-wider text-[#F4A62A] block">
@@ -554,7 +553,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
           {/* Tab 4: Settings & Environment */}
           {activeTab === "settings" && (
             <div className="bg-white p-6 rounded-[3px] border border-[#E5E2D7] shadow-2xs space-y-4 max-w-2xl">
-              <h2 className="font-serif text-lg font-bold text-[#124B2A]">
+              <h2 className="text-lg font-bold text-[#124B2A]">
                 Environment Configuration (.env.local)
               </h2>
               <p className="text-xs text-[#4e5e54]">
@@ -564,8 +563,8 @@ export default function AdminDashboardClient({ initialInquiries }) {
               <div className="space-y-2 text-xs font-mono bg-[#F8F7F2] p-4 rounded-[3px] border border-[#E5E2D7]">
                 <div>ADMIN_USERNAME = &quot;admin&quot;</div>
                 <div>ADMIN_PASSWORD = &quot;netarhat2026!&quot;</div>
-                <div>NEXT_PUBLIC_PHONE = &quot;+919470938399&quot;</div>
-                <div>NEXT_PUBLIC_WHATSAPP = &quot;+919470938399&quot;</div>
+                <div>NEXT_PUBLIC_PHONE = &quot;+916205087480&quot;</div>
+                <div>NEXT_PUBLIC_WHATSAPP = &quot;+916205087480&quot;</div>
                 <div>NEXT_PUBLIC_SITE_URL = &quot;https://netarhat.in&quot;</div>
               </div>
 
@@ -582,7 +581,7 @@ export default function AdminDashboardClient({ initialInquiries }) {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
           <div className="bg-white rounded-[4px] border border-[#E5E2D7] shadow-xl max-w-md w-full overflow-hidden">
             <div className="bg-[#124B2A] text-white px-4 py-3 flex items-center justify-between">
-              <span className="font-serif font-bold text-sm">Add New Tour Inquiry</span>
+              <span className="font-bold text-sm">Add New Tour Inquiry</span>
               <button
                 onClick={() => setIsAddModalOpen(false)}
                 className="text-white/80 hover:text-white"

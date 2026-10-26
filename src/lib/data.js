@@ -4,9 +4,9 @@ export const siteConfig = {
   name: "Netarhat Betla Tourism",
   domain: "netarhat.in",
   tagline: "Discover Jharkhand’s Hidden Gems",
-  phone: "+91 94709 38399",
-  phoneRaw: "+919470938399",
-  whatsapp: "+919470938399",
+  phone: "+91 62050 87480",
+  phoneRaw: "+916205087480",
+  whatsapp: "+916205087480",
   email: "info@netarhat.in",
   address: {
     street: "Railway Station Road",

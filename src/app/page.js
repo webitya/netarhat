@@ -13,11 +13,9 @@ import {
   ShieldCheck,
   CheckCircle,
   Phone,
-  MessageCircle,
   Users,
   TreePine,
   Binoculars,
-  Sparkles,
 } from "lucide-react";
 import { tourPackages, whyChooseUs, testimonials, siteConfig } from "@/lib/data";
 import BookingModal from "@/components/BookingModal";
@@ -50,7 +48,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[620px] lg:min-h-[700px] flex items-center justify-center text-white overflow-hidden">
+      <section className="relative min-h-[600px] lg:min-h-[660px] flex items-center justify-center text-white overflow-hidden">
         {/* Background Photo with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -59,27 +57,27 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center transform scale-105 animate-pulse duration-[10000ms]"
+            className="object-cover object-center transform scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#124B2A] via-[#124B2A]/60 to-black/40" />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-20">
-          {/* Nature Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium text-[#F4A62A] mb-6 shadow-sm">
-            <TreePine size={16} className="text-[#3D8B40]" />
-            <span>Jharkhand’s Premier Hill Station & Wildlife Sanctuary</span>
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-16">
+          {/* Authentic Local Badge */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#124B2A]/80 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-semibold text-[#F4A62A] mb-5 shadow-sm">
+            <ShieldCheck size={15} className="text-[#3D8B40]" />
+            <span>Govt. Approved Local Operator • Latehar & Netarhat Circuit</span>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 drop-shadow-md">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5 drop-shadow-md">
             Netarhat Betla Tourism
           </h1>
 
-          <p className="font-sans text-lg sm:text-2xl text-[#F8F7F2]/90 max-w-3xl mx-auto font-light leading-relaxed mb-8 drop-shadow">
+          <p className="text-base sm:text-xl text-[#F8F7F2]/90 max-w-3xl mx-auto font-normal leading-relaxed mb-8 drop-shadow">
             Discover the misty pine highlands of the <span className="font-semibold text-white">Queen of Chotanagpur</span> and the untamed safaris of <span className="font-semibold text-white">Betla National Park</span>.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <button
               onClick={() => openBookingFor("Ranchi – Netarhat – Ranchi (2N/3D)")}
               className="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-[#F4A62A] hover:bg-[#e09419] text-[#124B2A] font-bold text-base shadow-xl transition transform hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
@@ -92,7 +90,7 @@ export default function HomePage() {
               href="/destinations"
               className="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold text-base transition flex items-center justify-center gap-2"
             >
-              <Compass size={18} className="text-[#F4A62A]" />
+              <MapPin size={18} className="text-[#F4A62A]" />
               <span>Explore Destinations</span>
             </Link>
           </div>
@@ -107,7 +105,7 @@ export default function HomePage() {
                 <select
                   value={searchDestination}
                   onChange={(e) => setSearchDestination(e.target.value)}
-                  className="w-full p-2.5 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A]"
+                  className="w-full p-2.5 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A] font-medium"
                 >
                   <option value="all">All Destinations (Netarhat & Betla)</option>
                   <option value="netarhat">Netarhat (Queen of Chotanagpur)</option>
@@ -122,7 +120,7 @@ export default function HomePage() {
                 <select
                   value={searchDuration}
                   onChange={(e) => setSearchDuration(e.target.value)}
-                  className="w-full p-2.5 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A]"
+                  className="w-full p-2.5 rounded-lg border border-[#E5E2D7] bg-[#F8F7F2] text-sm text-[#25332B] focus:outline-none focus:ring-2 focus:ring-[#124B2A] font-medium"
                 >
                   <option value="all">Any Duration</option>
                   <option value="2n3d">2 Nights / 3 Days</option>
@@ -152,7 +150,7 @@ export default function HomePage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
               Two Unmatched Wonders of Jharkhand
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#124B2A] mb-4">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight mb-3">
               Misty Mountain Heights & Untamed Tiger Reserve
             </h2>
             <p className="text-[#4e5e54] text-base leading-relaxed">
@@ -175,7 +173,7 @@ export default function HomePage() {
                   Elevation: 1,128m
                 </div>
                 <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-xs text-white p-3 rounded-lg">
-                  <h3 className="font-serif text-xl font-bold text-[#FFFFFF]">Netarhat — The Queen of Chotanagpur</h3>
+                  <h3 className="text-xl font-bold text-[#FFFFFF]">Netarhat — The Queen of Chotanagpur</h3>
                   <p className="text-xs text-[#E5E2D7]">Pine forests, cool morning mist & legendary sunsets</p>
                 </div>
               </div>
@@ -185,7 +183,7 @@ export default function HomePage() {
                   Perched high upon the Chotanagpur plateau, Netarhat invites you to tranquil British-era pine tracks, the cascading Upper Ghaghri waterfalls, and world-renowned sunsets at Magnolia Point that bathe endless forested ridges in radiant amber glow.
                 </p>
 
-                <div className="grid grid-cols-2 gap-2 text-xs text-[#124B2A] font-medium pt-2 border-t border-[#E5E2D7]">
+                <div className="grid grid-cols-2 gap-2 text-xs text-[#124B2A] font-semibold pt-2 border-t border-[#E5E2D7]">
                   <span className="flex items-center gap-1.5">
                     <CheckCircle size={14} className="text-[#3D8B40]" /> Magnolia Sunset Point
                   </span>
@@ -226,7 +224,7 @@ export default function HomePage() {
                   Palamau Tiger Reserve
                 </div>
                 <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-xs text-white p-3 rounded-lg">
-                  <h3 className="font-serif text-xl font-bold text-[#FFFFFF]">Betla National Park & Forts</h3>
+                  <h3 className="text-xl font-bold text-[#FFFFFF]">Betla National Park & Forts</h3>
                   <p className="text-xs text-[#E5E2D7]">Wild Asian elephants, safari trails & 16th-century ruins</p>
                 </div>
               </div>
@@ -236,7 +234,7 @@ export default function HomePage() {
                   One of India’s pioneering wildlife reserves, Betla combines rich biodiversity with mysterious archaeological history. Embark on early morning open-top jeep safaris to track elephant herds, bison, and deer, then journey deep into sal canopies to explore the ancient stone ramparts of the Palamau Forts.
                 </p>
 
-                <div className="grid grid-cols-2 gap-2 text-xs text-[#124B2A] font-medium pt-2 border-t border-[#E5E2D7]">
+                <div className="grid grid-cols-2 gap-2 text-xs text-[#124B2A] font-semibold pt-2 border-t border-[#E5E2D7]">
                   <span className="flex items-center gap-1.5">
                     <CheckCircle size={14} className="text-[#3D8B40]" /> 4x4 Core Jungle Safari
                   </span>
@@ -266,7 +264,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. FEATURED TOUR PACKAGES (Listing with ItemList concept) */}
+      {/* 3. FEATURED TOUR PACKAGES */}
       <section id="packages" className="py-16 sm:py-20 bg-white border-y border-[#E5E2D7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -274,7 +272,7 @@ export default function HomePage() {
               <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
                 Handcrafted Itineraries from Ranchi
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#124B2A]">
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight">
                 Our Featured Tour Packages
               </h2>
               <p className="text-[#4e5e54] text-sm sm:text-base mt-2 max-w-2xl">
@@ -324,7 +322,7 @@ export default function HomePage() {
                 {/* Body */}
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="font-serif text-xl font-bold text-[#124B2A] group-hover:text-[#3D8B40] transition mb-1 leading-snug">
+                    <h3 className="text-lg font-bold text-[#124B2A] group-hover:text-[#3D8B40] transition mb-1 leading-snug">
                       <Link href={`/tours/${pkg.slug}`}>{pkg.title}</Link>
                     </h3>
                     <p className="text-xs text-[#3D8B40] font-semibold mb-3">{pkg.subtitle}</p>
@@ -389,7 +387,7 @@ export default function HomePage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
               Credibility & Local Expertise
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
               Why Travel With Netarhat Betla Tourism?
             </h2>
             <p className="text-[#F8F7F2]/80 text-sm sm:text-base leading-relaxed">
@@ -406,7 +404,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 rounded-lg bg-[#3D8B40]/20 text-[#F4A62A] flex items-center justify-center mb-4">
                   <ShieldCheck size={26} />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-white mb-2">{item.title}</h3>
+                <h3 className="text-base font-bold text-white mb-2">{item.title}</h3>
                 <p className="text-xs sm:text-sm text-[#F8F7F2]/75 leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -421,7 +419,7 @@ export default function HomePage() {
             <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
               Guest Experiences
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#124B2A] mb-3">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight mb-3">
               What Our Travelers Say
             </h2>
             <p className="text-[#4e5e54] text-sm sm:text-base">
@@ -447,7 +445,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="pt-4 border-t border-[#E5E2D7]">
-                  <p className="font-serif font-bold text-[#124B2A] text-base">{t.name}</p>
+                  <p className="font-bold text-[#124B2A] text-base">{t.name}</p>
                   <p className="text-xs text-[#4e5e54]">{t.location}</p>
                   <p className="text-[11px] text-[#3D8B40] font-medium mt-1">Tour: {t.tour}</p>
                 </div>
@@ -463,11 +461,12 @@ export default function HomePage() {
           <span className="inline-block px-3 py-1 rounded-full bg-[#124B2A]/10 text-[#124B2A] text-xs font-bold uppercase tracking-wider">
             Personalized Mountain & Safari Itineraries
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#124B2A]">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#124B2A] tracking-tight">
             Planning a Family Holiday or Corporate Retreat to Netarhat?
           </h2>
           <p className="text-[#4e5e54] text-base max-w-2xl mx-auto">
-            Tell us your travel dates, group size, and preferences. Our Latehar travel desk will create a customized package with vehicle, stays, and safari permits within 2 hours.
+            Tell us your travel dates, group size, and preferences. Call our Latehar desk directly at{" "}
+            <strong className="text-[#124B2A]">6205087480</strong> or request a quick callback.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
@@ -478,13 +477,15 @@ export default function HomePage() {
               Request Custom Quote
             </button>
             <a
-              href="https://wa.me/919470938399?text=Hello%20Netarhat%20Betla%20Tourism%2C%20I%20want%20to%20plan%20a%20custom%20trip."
+              href="https://wa.me/916205087480?text=Hello%20Netarhat%20Betla%20Tourism%2C%20I%20want%20to%20plan%20a%20custom%20trip."
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-[#3D8B40] hover:bg-[#327335] text-white font-bold text-base shadow-md transition flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base shadow-md transition flex items-center justify-center gap-2"
             >
-              <MessageCircle size={18} />
-              <span>Chat on WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.73 7.39C8.56 7.39 8.28 7.45 8.05 7.7C7.82 7.95 7.18 8.55 7.18 9.77C7.18 10.99 8.07 12.16 8.2 12.33C8.32 12.5 9.94 15.01 12.44 16.08C13.03 16.34 13.5 16.5 13.86 16.61C14.46 16.8 15.01 16.78 15.44 16.71C15.93 16.64 16.94 16.1 17.15 15.51C17.36 14.92 17.36 14.42 17.29 14.31C17.23 14.2 17.06 14.13 16.81 14.01C16.55 13.88 15.3 13.27 15.07 13.18C14.84 13.1 14.67 13.06 14.5 13.31C14.33 13.55 13.86 14.13 13.71 14.3C13.57 14.47 13.43 14.49 13.17 14.37C12.92 14.24 12.1 13.97 11.13 13.11C10.37 12.44 9.86 11.61 9.71 11.36C9.56 11.11 9.7 10.97 9.83 10.84C9.94 10.73 10.08 10.55 10.21 10.4C10.34 10.25 10.38 10.14 10.47 9.97C10.55 9.8 10.51 9.66 10.45 9.53C10.38 9.41 9.9 8.22 9.69 7.74C9.49 7.27 9.28 7.33 9.12 7.32C8.98 7.32 8.85 7.39 8.73 7.39Z"/>
+              </svg>
+              <span>WhatsApp 6205087480</span>
             </a>
           </div>
         </div>

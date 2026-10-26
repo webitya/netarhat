@@ -69,7 +69,7 @@ export default async function TourDetailPage({ params }) {
       "@type": "TravelAgency",
       "name": "Netarhat Betla Tourism",
       "url": "https://netarhat.in",
-      "telephone": "+919470938399",
+      "telephone": "+916205087480",
     },
     "offers": {
       "@type": "Offer",
@@ -116,7 +116,7 @@ export default async function TourDetailPage({ params }) {
             </span>
           </div>
 
-          <h1 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 drop-shadow-md text-white">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 drop-shadow-md text-white">
             {tour.title}
           </h1>
           <p className="font-sans text-sm sm:text-lg text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
@@ -135,7 +135,7 @@ export default async function TourDetailPage({ params }) {
               <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
                 Tour Summary
               </span>
-              <h2 className="font-serif text-2xl font-bold text-[#124B2A] mb-4">
+              <h2 className="text-2xl font-bold text-[#124B2A] mb-4">
                 About this Itinerary
               </h2>
               <p className="text-sm sm:text-base text-[#25332B] leading-relaxed mb-6">
@@ -143,7 +143,7 @@ export default async function TourDetailPage({ params }) {
               </p>
 
               <div className="border-t border-[#E5E2D7] pt-5">
-                <h3 className="font-serif text-lg font-bold text-[#124B2A] mb-3">
+                <h3 className="text-lg font-bold text-[#124B2A] mb-3">
                   Key Highlights:
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -162,7 +162,7 @@ export default async function TourDetailPage({ params }) {
               <span className="text-xs uppercase tracking-widest font-bold text-[#F4A62A] block mb-2">
                 Day-by-Day Schedule
               </span>
-              <h2 className="font-serif text-2xl font-bold text-[#124B2A] mb-6">
+              <h2 className="text-2xl font-bold text-[#124B2A] mb-6">
                 Detailed Itinerary
               </h2>
 
@@ -176,7 +176,7 @@ export default async function TourDetailPage({ params }) {
                       <span className="w-8 h-8 rounded-full bg-[#124B2A] text-white flex items-center justify-center font-bold text-xs shrink-0">
                         D{day.day}
                       </span>
-                      <h3 className="font-serif text-base sm:text-lg font-bold text-[#124B2A]">
+                      <h3 className="text-base sm:text-lg font-bold text-[#124B2A]">
                         Day {day.day}: {day.title}
                       </h3>
                     </div>
@@ -199,7 +199,7 @@ export default async function TourDetailPage({ params }) {
               <span className="text-xs uppercase tracking-widest font-bold text-[#3D8B40] block mb-2">
                 Transparent Rates
               </span>
-              <h2 className="font-serif text-2xl font-bold text-[#124B2A] mb-4">
+              <h2 className="text-2xl font-bold text-[#124B2A] mb-4">
                 Pricing by Group Size
               </h2>
 
@@ -231,7 +231,7 @@ export default async function TourDetailPage({ params }) {
             {/* Inclusions & Exclusions */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-2xl border border-[#E5E2D7] shadow-sm">
-                <h3 className="font-serif text-lg font-bold text-[#124B2A] mb-3 flex items-center gap-2">
+                <h3 className="text-lg font-bold text-[#124B2A] mb-3 flex items-center gap-2">
                   <CheckCircle size={18} className="text-[#3D8B40]" />
                   <span>What&apos;s Included</span>
                 </h3>
@@ -246,7 +246,7 @@ export default async function TourDetailPage({ params }) {
               </div>
 
               <div className="bg-white p-6 rounded-2xl border border-[#E5E2D7] shadow-sm">
-                <h3 className="font-serif text-lg font-bold text-[#124B2A] mb-3 flex items-center gap-2">
+                <h3 className="text-lg font-bold text-[#124B2A] mb-3 flex items-center gap-2">
                   <XCircle size={18} className="text-[#75867c]" />
                   <span>What&apos;s Excluded</span>
                 </h3>

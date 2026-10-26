@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   
   /* Netarhat Betla Tourism Exact Brand Color Palette */
   --color-forest: #124B2A;
@@ -55,8 +55,8 @@
   --color-charcoal-light: #75867c;
   --color-border-warm: #E5E2D7;
 
-  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html {
@@ -76,10 +76,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: var(--font-serif);
+h1, h2, h3, h4, h5, h6, .font-heading, .font-serif {
+  font-family: var(--font-sans);
   color: var(--color-forest);
-  font-feature-settings: "liga" 1, "kern" 1;
+  letter-spacing: -0.025em;
+  font-weight: 700;
 }
 
 /* Custom scrollbar */
