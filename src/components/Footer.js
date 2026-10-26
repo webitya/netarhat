@@ -206,7 +206,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#F8F7F2]/70 gap-3">
-          <p>© {new Date().getFullYear()} {siteConfig.name} (netarhat.in). All rights reserved.</p>
+          <p>© 2026 {siteConfig.name} (netarhat.in). All rights reserved.</p>
           <div className="flex items-center gap-4 text-xs">
             <span>Official Eco-Tourism Portal</span>
             <span>•</span>

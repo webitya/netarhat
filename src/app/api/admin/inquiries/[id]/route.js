@@ -3,6 +3,8 @@ import { cookies } from "next/headers";
 import { COOKIE_NAME, validateSessionToken } from "@/lib/auth";
 import { updateInquiryStatus, deleteInquiry } from "@/lib/inquiriesStore";
 
+export const dynamic = "force-dynamic";
+
 export async function PATCH(request, { params }) {
   const cookieStore = await cookies();
   const sessionToken = cookieStore.get(COOKIE_NAME)?.value;
