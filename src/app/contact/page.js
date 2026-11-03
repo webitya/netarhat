@@ -204,7 +204,7 @@ export default function ContactPage() {
                 </h3>
               </div>
 
-              <div className="space-y-4 text-sm text-[#F8F7F2]/90">
+              <div className="space-y-4 text-sm text-[#F8F7F2]">
                 <div className="flex items-start gap-3">
                   <MapPin size={18} className="text-[#F4A62A] shrink-0 mt-0.5" />
                   <div>
@@ -234,7 +234,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Clock size={18} className="text-[#3D8B40] shrink-0 mt-0.5" />
+                  <Clock size={18} className="text-[#F4A62A] shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-white">Desk Working Hours:</strong>
                     <span>Monday to Sunday: 08:00 AM – 08:00 PM IST</span>

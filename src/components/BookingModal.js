@@ -103,7 +103,7 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               {error && (
-                <div className="p-3 bg-red-50 border border-red-200 text-red-7 basal text-sm rounded-lg flex items-center gap-2">
+                <div className="p-3 bg-red-50 border border-red-200 text-red-700 text-sm rounded-lg flex items-center gap-2">
                   <AlertCircle size={16} className="text-red-600 shrink-0" />
                   <span>{error}</span>
                 </div>
@@ -240,7 +240,7 @@ export default function BookingModal({ isOpen, onClose, selectedPackage = "" }) 
                     href={`https://wa.me/916205087480?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#25D366] font-semibold underline hover:text-[#124B2A]"
+                    className="text-[#128C7E] font-bold underline hover:text-[#124B2A]"
                   >
                     WhatsApp +91 62050 87480
                   </a>
