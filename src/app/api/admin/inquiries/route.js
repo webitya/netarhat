@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { COOKIE_NAME, validateSessionToken } from "@/lib/auth";
-import { getAllInquiries, addInquiry } from "@/lib/inquiriesStore";
-
+import { getInquiries, createInquiry } from "@/lib/db";
 
 export async function GET() {
   const cookieStore = await cookies();
@@ -12,14 +11,14 @@ export async function GET() {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const inquiries = getAllInquiries();
+  const inquiries = await getInquiries();
   return NextResponse.json({ inquiries });
 }
 
 export async function POST(request) {
   try {
     const data = await request.json();
-    const created = addInquiry(data);
+    const created = await createInquiry(data);
     return NextResponse.json({ success: true, inquiry: created }, { status: 201 });
   } catch (error) {
     return NextResponse.json({ error: "Failed to create inquiry" }, { status: 400 });

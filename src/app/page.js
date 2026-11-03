@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -23,6 +23,18 @@ import BookingModal from "@/components/BookingModal";
 export default function HomePage() {
   const [selectedTour, setSelectedTour] = useState("");
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
+  const [packages, setPackages] = useState(tourPackages);
+
+  useEffect(() => {
+    fetch("/api/admin/packages")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && Array.isArray(data.packages) && data.packages.length > 0) {
+          setPackages(data.packages);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   // Search Widget State
   const [searchDestination, setSearchDestination] = useState("all");
@@ -33,7 +45,7 @@ export default function HomePage() {
     setBookingModalOpen(true);
   };
 
-  const filteredPackages = tourPackages.filter((pkg) => {
+  const filteredPackages = packages.filter((pkg) => {
     const matchDest =
       searchDestination === "all" ||
       pkg.destination.toLowerCase().includes(searchDestination.toLowerCase());

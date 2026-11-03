@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { tourPackages } from "@/lib/data";
+import { getTourPackageBySlug } from "@/lib/db";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import TourDetailClient from "./TourDetailClient";
 import {
@@ -41,7 +42,15 @@ export async function generateMetadata({ params }) {
 
 export default async function TourDetailPage({ params }) {
   const { slug } = await params;
-  const tour = tourPackages.find((p) => p.slug === slug);
+  let tour = null;
+  try {
+    tour = await getTourPackageBySlug(slug);
+  } catch {
+    tour = null;
+  }
+  if (!tour) {
+    tour = tourPackages.find((p) => p.slug === slug);
+  }
 
   if (!tour) {
     notFound();

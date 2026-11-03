@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { tourPackages } from "@/lib/data";
@@ -12,8 +12,20 @@ export default function ToursPage() {
   const [filter, setFilter] = useState("all");
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedTour, setSelectedTour] = useState("");
+  const [packages, setPackages] = useState(tourPackages);
 
-  const filtered = tourPackages.filter((pkg) => {
+  useEffect(() => {
+    fetch("/api/admin/packages")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && Array.isArray(data.packages) && data.packages.length > 0) {
+          setPackages(data.packages);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const filtered = packages.filter((pkg) => {
     if (filter === "all") return true;
     if (filter === "netarhat") return pkg.destination.toLowerCase().includes("netarhat") && !pkg.destination.toLowerCase().includes("betla");
     if (filter === "betla") return pkg.destination.toLowerCase().includes("betla");

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { addInquiry } from "@/lib/inquiriesStore";
+import { createInquiry } from "@/lib/db";
 
 export async function POST(request) {
   try {
@@ -12,7 +12,7 @@ export async function POST(request) {
       );
     }
 
-    const newContact = addInquiry({
+    const newContact = await createInquiry({
       type: "Contact",
       name: data.name,
       email: data.email,
@@ -27,6 +27,7 @@ export async function POST(request) {
       id: newContact.id,
     });
   } catch (error) {
+    console.error("Contact submission error:", error);
     return NextResponse.json(
       { success: false, error: "Failed to send message" },
       { status: 500 }

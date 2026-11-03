@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { stays } from "@/lib/data";
+import { stays as initialStays } from "@/lib/data";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookingModal from "@/components/BookingModal";
 import { Star, MapPin, CheckCircle, BedDouble, Calendar, ArrowRight, ShieldCheck } from "lucide-react";
@@ -10,6 +10,18 @@ import { Star, MapPin, CheckCircle, BedDouble, Calendar, ArrowRight, ShieldCheck
 export default function StaysPage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedStay, setSelectedStay] = useState("");
+  const [staysList, setStaysList] = useState(initialStays);
+
+  useEffect(() => {
+    fetch("/api/admin/stays")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && Array.isArray(data.stays) && data.stays.length > 0) {
+          setStaysList(data.stays);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const handleBook = (stayName) => {
     setSelectedStay(`Stay Booking: ${stayName}`);
@@ -62,7 +74,7 @@ export default function StaysPage() {
       {/* Stays Listing */}
       <section className="py-16 w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {stays.map((stay) => (
+          {staysList.map((stay) => (
             <div
               key={stay.id}
               className="bg-white rounded-2xl overflow-hidden border border-[#E5E2D7] shadow-sm hover:shadow-lg transition duration-300 flex flex-col group"

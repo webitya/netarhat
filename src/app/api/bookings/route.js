@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { addInquiry } from "@/lib/inquiriesStore";
+import { createInquiry } from "@/lib/db";
 
 export async function POST(request) {
   try {
@@ -12,7 +12,7 @@ export async function POST(request) {
       );
     }
 
-    const newBooking = addInquiry({
+    const newBooking = await createInquiry({
       type: "Booking",
       name: data.name,
       email: data.email || "",
@@ -30,6 +30,7 @@ export async function POST(request) {
       message: "Booking inquiry submitted successfully. Our team will contact you shortly.",
     });
   } catch (error) {
+    console.error("Booking submission error:", error);
     return NextResponse.json(
       { success: false, error: "Failed to process booking request" },
       { status: 500 }

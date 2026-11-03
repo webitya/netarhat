@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { COOKIE_NAME, validateSessionToken } from "@/lib/auth";
-import { updateInquiryStatus, deleteInquiry } from "@/lib/inquiriesStore";
-
+import { updateInquiryStatus, deleteInquiry } from "@/lib/db";
 
 export async function PATCH(request, { params }) {
   const cookieStore = await cookies();
@@ -14,7 +13,7 @@ export async function PATCH(request, { params }) {
 
   const { id } = await params;
   const body = await request.json();
-  const updated = updateInquiryStatus(id, body.status);
+  const updated = await updateInquiryStatus(id, body.status);
 
   if (!updated) {
     return NextResponse.json({ error: "Inquiry not found" }, { status: 404 });
@@ -32,11 +31,11 @@ export async function DELETE(request, { params }) {
   }
 
   const { id } = await params;
-  const deleted = deleteInquiry(id);
+  const deleted = await deleteInquiry(id);
 
   if (!deleted) {
     return NextResponse.json({ error: "Inquiry not found" }, { status: 404 });
   }
 
-  return NextResponse.json({ success: true, inquiry: deleted });
+  return NextResponse.json({ success: true, message: "Deleted successfully" });
 }
