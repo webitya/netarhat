@@ -63,7 +63,7 @@ export default function ContactPage() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Contact Netarhat Betla Tourism
           </h1>
-          <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm sm:text-base text-[#F8F7F2] max-w-2xl mx-auto font-light leading-relaxed">
             Have questions about tour packages, hotel availability, safari permits, or route conditions? Drop us a message or call our Latehar desk. We reply within 24 hours.
           </p>
         </div>

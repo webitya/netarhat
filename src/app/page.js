@@ -143,7 +143,7 @@ export default function HomePage() {
               </div>
               <div>
                 <p className="text-white font-bold text-xs sm:text-sm leading-tight">1,128m Altitude</p>
-                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">Queen of Chotanagpur</p>
+                <p className="text-[11px] sm:text-xs text-[#F8F7F2] leading-tight">Queen of Chotanagpur</p>
               </div>
             </div>
             <div className="flex items-center gap-2.5 sm:gap-3">
@@ -152,7 +152,7 @@ export default function HomePage() {
               </div>
               <div>
                 <p className="text-white font-bold text-xs sm:text-sm leading-tight">Palamau Tiger Reserve</p>
-                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">Wild Elephant Safaris</p>
+                <p className="text-[11px] sm:text-xs text-[#F8F7F2] leading-tight">Wild Elephant Safaris</p>
               </div>
             </div>
             <div className="flex items-center gap-2.5 sm:gap-3">
@@ -161,7 +161,7 @@ export default function HomePage() {
               </div>
               <div>
                 <p className="text-white font-bold text-xs sm:text-sm leading-tight">Latehar Desk</p>
-                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">Direct Local Operators</p>
+                <p className="text-[11px] sm:text-xs text-[#F8F7F2] leading-tight">Direct Local Operators</p>
               </div>
             </div>
             <div className="flex items-center gap-2.5 sm:gap-3">
@@ -170,7 +170,7 @@ export default function HomePage() {
               </div>
               <div>
                 <p className="text-white font-bold text-xs sm:text-sm leading-tight">6205087480</p>
-                <p className="text-[11px] sm:text-xs text-[#E5E2D7]/80 leading-tight">24/7 Booking Helpline</p>
+                <p className="text-[11px] sm:text-xs text-[#F8F7F2] leading-tight">24/7 Booking Helpline</p>
               </div>
             </div>
           </div>
@@ -406,7 +406,7 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
               Why Travel With Netarhat Betla Tourism?
             </h2>
-            <p className="text-[#F8F7F2]/80 text-sm sm:text-base leading-relaxed">
+            <p className="text-[#F8F7F2] text-sm sm:text-base leading-relaxed">
               Based directly in Latehar at the threshold of Netarhat and Betla, we are local stewards dedicated to responsible tourism, safety, and authentic nature experiences.
             </p>
           </div>
@@ -421,7 +421,7 @@ export default function HomePage() {
                   <ShieldCheck size={26} />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-[#F8F7F2]/80 leading-relaxed">{item.description}</p>
+                <p className="text-xs sm:text-sm text-[#F8F7F2] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -476,17 +476,17 @@ export default function HomePage() {
               <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
                 Planning a Family Holiday or Corporate Retreat to Netarhat?
               </h2>
-              <p className="text-[#F8F7F2]/90 text-base sm:text-lg leading-relaxed">
+              <p className="text-[#F8F7F2] text-base sm:text-lg leading-relaxed">
                 Tell us your travel dates, group size, and preferences. Call our Latehar desk directly at{" "}
                 <a href="tel:6205087480" className="font-bold text-[#F4A62A] hover:underline">
                   +91 62050 87480
                 </a>{" "}
                 or request a personalized all-inclusive quote.
               </p>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-[#E5E2D7]/80 pt-2">
-                <span className="flex items-center gap-1.5"><CheckCircle size={15} className="text-[#3D8B40]" /> Govt. Approved Local Desk</span>
-                <span className="flex items-center gap-1.5"><CheckCircle size={15} className="text-[#3D8B40]" /> Guaranteed Forest Department Permits</span>
-                <span className="flex items-center gap-1.5"><CheckCircle size={15} className="text-[#3D8B40]" /> Sanitized AC SUVs & Drivers</span>
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-[#F8F7F2] font-medium pt-2">
+                <span className="flex items-center gap-1.5"><CheckCircle size={15} className="text-[#F4A62A]" /> Govt. Approved Local Desk</span>
+                <span className="flex items-center gap-1.5"><CheckCircle size={15} className="text-[#F4A62A]" /> Guaranteed Forest Department Permits</span>
+                <span className="flex items-center gap-1.5"><CheckCircle size={15} className="text-[#F4A62A]" /> Sanitized AC SUVs & Drivers</span>
               </div>
             </div>
 

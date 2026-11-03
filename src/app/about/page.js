@@ -31,7 +31,7 @@ export default function AboutPage() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             About Netarhat Betla Tourism
           </h1>
-          <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm sm:text-base text-[#F8F7F2] max-w-2xl mx-auto font-light leading-relaxed">
             Pioneering authentic, responsible eco-tourism across the highlands and wildlife reserves of western Jharkhand.
           </p>
         </div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">
               Ready to Discover Netarhat & Betla?
             </h3>
-            <p className="text-xs sm:text-sm text-[#F8F7F2]/80 max-w-xl">
+            <p className="text-xs sm:text-sm text-[#F8F7F2] max-w-xl">
               Connect with our Latehar headquarters today to receive an all-inclusive customized tour quote with sanitized SUV, hotel stays, and guaranteed safari booking.
             </p>
           </div>

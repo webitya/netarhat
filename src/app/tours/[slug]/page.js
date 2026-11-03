@@ -110,7 +110,7 @@ export default async function TourDetailPage({ params }) {
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 drop-shadow-md text-white">
             {tour.title}
           </h1>
-          <p className="font-sans text-sm sm:text-lg text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="font-sans text-sm sm:text-lg text-[#F8F7F2] max-w-2xl mx-auto font-medium leading-relaxed">
             {tour.subtitle} • {tour.duration}
           </p>
         </div>

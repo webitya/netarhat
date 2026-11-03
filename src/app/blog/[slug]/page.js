@@ -141,7 +141,7 @@ export default async function BlogPostPage({ params }) {
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
               Explore Our Netarhat & Betla Tour Packages
             </h3>
-            <p className="text-xs sm:text-sm text-[#F8F7F2]/80 max-w-md">
+            <p className="text-xs sm:text-sm text-[#F8F7F2] max-w-md">
               Let our certified local team take care of your hotels, sanitized SUV cab, and safari permits.
             </p>
           </div>

@@ -53,7 +53,7 @@ export default function StaysPage() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Recommended Stays in Netarhat & Betla
           </h1>
-          <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm sm:text-base text-[#F8F7F2] max-w-2xl mx-auto font-light leading-relaxed">
             Stay in verified British-era colonial heritage bungalows, hilltop sunrise view lodges, and forest eco-resorts with hot water, delicious meals, and serene pine views.
           </p>
         </div>

@@ -27,7 +27,7 @@ export default function GalleryPage() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Photo & Media Gallery
           </h1>
-          <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm sm:text-base text-[#F8F7F2] max-w-2xl mx-auto font-light leading-relaxed">
             Immerse yourself in the majestic landscapes of Netarhat and the wild fauna of Betla National Park. High-resolution captures of sunrises, ancient forts, cascading waterfalls, and colonial retreats.
           </p>
         </div>

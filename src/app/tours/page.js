@@ -54,7 +54,7 @@ export default function ToursPage() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Tour Packages from Ranchi
           </h1>
-          <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm sm:text-base text-[#F8F7F2] max-w-2xl mx-auto font-light leading-relaxed">
             All our tour packages include verified deluxe hotel stays, sanitized private AC vehicles with experienced hill drivers, delicious meals, and certified local guides.
           </p>
         </div>

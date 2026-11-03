@@ -77,23 +77,23 @@ export default function AdminLoginPage() {
             <h1 className="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
               Official Administration & Booking Console
             </h1>
-            <p className="text-sm sm:text-base text-[#F8F7F2]/90 leading-relaxed font-light">
+            <p className="text-sm sm:text-base text-[#F8F7F2] leading-relaxed font-light">
               Secure internal portal for managing customer holiday reservations, safari requests, customized Latehar itineraries, and hotel bookings across Netarhat and Betla.
             </p>
           </div>
 
-          <div className="pt-4 border-t border-white/20 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-[#E5E2D7]">
+          <div className="pt-4 border-t border-white/20 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-[#F8F7F2]">
             <div className="flex items-center gap-2">
-              <ShieldCheck size={16} className="text-[#3D8B40] shrink-0" />
+              <ShieldCheck size={16} className="text-[#F4A62A] shrink-0" />
               <span>Protected Session Storage</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle size={16} className="text-[#3D8B40] shrink-0" />
+              <CheckCircle size={16} className="text-[#F4A62A] shrink-0" />
               <span>Direct Latehar Desk Control</span>
             </div>
           </div>
 
-          <div className="text-xs text-[#E5E2D7]/80 pt-2">
+          <div className="text-xs text-[#F8F7F2] pt-2">
             Latehar Operations Desk: <strong className="text-white">+91 62050 87480</strong> • Railway Station Road, Latehar
           </div>
         </div>

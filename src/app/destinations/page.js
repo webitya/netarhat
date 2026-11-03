@@ -23,7 +23,7 @@ export default function DestinationsIndexPage() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Destinations: Netarhat & Betla
           </h1>
-          <p className="text-sm sm:text-lg text-[#F8F7F2]/90 font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="text-sm sm:text-lg text-[#F8F7F2] font-light leading-relaxed max-w-2xl mx-auto">
             Experience the harmony of Jharkhand’s elevated pine forests and dense tropical tiger reserves. Discover why Netarhat and Betla are Eastern India’s best-kept nature secrets.
           </p>
         </div>

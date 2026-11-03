@@ -87,7 +87,7 @@ export default function NetarhatDestinationPage() {
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-md text-white">
             Netarhat, Jharkhand
           </h1>
-          <p className="font-sans text-base sm:text-xl text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="font-sans text-base sm:text-xl text-[#F8F7F2] max-w-2xl mx-auto font-medium leading-relaxed">
             {dest.tagline}
           </p>
         </div>

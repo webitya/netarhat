@@ -21,7 +21,7 @@ export default function BlogPage() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-white">
             Insights & Travel Tips
           </h1>
-          <p className="text-sm sm:text-base text-[#F8F7F2]/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-sm sm:text-base text-[#F8F7F2] max-w-2xl mx-auto font-light leading-relaxed">
             Insider advice from our certified naturalists and local travel guides to help you plan an unforgettable holiday across Jharkhand.
           </p>
         </div>
