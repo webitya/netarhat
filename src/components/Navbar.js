@@ -40,10 +40,12 @@ export default function Navbar() {
     }
   }, [mobileDrawerOpen]);
 
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
     setMobileDrawerOpen(false);
     setDestDropdownOpen(false);
-  }, [pathname]);
+  }
 
   const navLinks = [
     { name: "Home", href: "/" },
