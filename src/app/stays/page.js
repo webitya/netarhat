@@ -5,7 +5,7 @@ import Image from "next/image";
 import { stays as initialStays } from "@/lib/data";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookingModal from "@/components/BookingModal";
-import { Star, MapPin, ShieldCheck, Sparkles, Coffee, PhoneCall, HelpCircle } from "lucide-react";
+import { Star, MapPin, ShieldCheck, Coffee, PhoneCall, HelpCircle } from "lucide-react";
 
 export default function StaysPage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -60,12 +60,8 @@ export default function StaysPage() {
       <Breadcrumbs items={[{ label: "Recommended Stays", href: "/stays" }]} />
 
       {/* Hero Header */}
-      <section className="bg-[#124B2A] text-white py-14 sm:py-16 px-4 text-center">
+      <section className="bg-[#124B2A] text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-medium text-[#F4A62A] mb-3">
-            <Sparkles size={14} />
-            <span>Verified Heritage & Eco-Resorts</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold mb-4 text-white tracking-tight">
             Recommended Stays in Netarhat & Betla
           </h1>
