@@ -18,6 +18,8 @@ import {
   Users,
 } from "lucide-react";
 
+export const instant = false;
+
 export async function generateStaticParams() {
   return tourPackages.map((pkg) => ({
     slug: pkg.slug,
@@ -42,14 +44,13 @@ export async function generateMetadata({ params }) {
 
 export default async function TourDetailPage({ params }) {
   const { slug } = await params;
-  let tour = null;
-  try {
-    tour = await getTourPackageBySlug(slug);
-  } catch {
-    tour = null;
-  }
+  let tour = tourPackages.find((p) => p.slug === slug);
   if (!tour) {
-    tour = tourPackages.find((p) => p.slug === slug);
+    try {
+      tour = await getTourPackageBySlug(slug);
+    } catch {
+      tour = null;
+    }
   }
 
   if (!tour) {
